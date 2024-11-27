@@ -28,9 +28,20 @@ public class xcontroller {
 	public String home(Model m)
 	{
 		List<Employee>emp =service.getAllEmp();
+		System.out.println("Employee List:" +emp);
 		m.addAttribute("emp",emp);
 		return "index";
 	}
+	/*
+	@PostMapping("/search")
+	public String SearchEmp(@ModelAttribute Employee e, Model m)
+	{
+		Employee emp = service.get(e.getId());
+		m.addAttribute("Employee",emp);
+		return "index";
+		
+	}*/
+	
 	@GetMapping("add-emp")
 	public String addEmpForm()
 	{

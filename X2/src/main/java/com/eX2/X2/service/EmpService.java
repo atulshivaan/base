@@ -37,4 +37,12 @@ public class EmpService {
   {
 	  repo.deleteById(id);
   }
+/*
+public Employee get(int id) {
+	// TODO Auto-generated method stub
+	return repo.findById(id).get();
+}*/
+
+
+
 }
